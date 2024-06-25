@@ -40,9 +40,10 @@
             // 取得密碼輸入框的值
             let pw = $("#pw").val()
             // 發送 POST 請求到 chk_acc.php 檢查帳號是否存在
-            $.post('./api/chk_acc.php', {
-                acc
-            }, (res) => {
+            $.post('./api/chk_acc.php', {acc}, (res) => {
+                // 檢查回傳值
+                // console.log(res);
+                
                 // 如果回傳的結果為 0，表示查無帳號
                 if (parseInt(res) == 0) {
                     alert("查無帳號")

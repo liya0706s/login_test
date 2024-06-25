@@ -1,5 +1,5 @@
 <?php
-include_once "./api/db.php";
+include_once "../api/db.php";
 
 //使用count來進行帳號與密碼的檢查
 $res=$Mem->count($_POST);
