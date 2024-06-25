@@ -12,6 +12,8 @@ include_once "./api/db.php";
 
 <body>
     <?php
+    // dd($_SESSION['user']);
+    
     $row = $Mem->find(['acc'=>$_SESSION['user']]);
     // dd($row);
     ?>
