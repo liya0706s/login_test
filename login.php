@@ -43,7 +43,7 @@
             $.post('./api/chk_acc.php', {acc}, (res) => {
                 // 檢查回傳值
                 // console.log(res);
-                
+
                 // 如果回傳的結果為 0，表示查無帳號
                 if (parseInt(res) == 0) {
                     alert("查無帳號")
@@ -55,14 +55,9 @@
                     }, (res) => {
                         // 如果回傳的結果為 1，表示密碼正確，導向後台;否則顯示密碼錯誤
                         if (parseInt(res) == 1) {
-                            // 如果帳號為 'admin'，導向後台頁面
-                            
-                            // if (isset($_SESSION['user'])) {
+                         
                                 location.href = 'back.php'
-                            // } else {
-                                // 否則導向首頁
-                            //     location.href = 'index.php'
-                            // }
+                            
                         } else {
                             // alert(parseInt(int));
                             // return;
