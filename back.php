@@ -17,6 +17,8 @@ include_once "./api/db.php";
     ?>
     
     <h1>Back page</h1>
+    <h3><a href="./welcome.php">Welcome</a></h3>
+    <h3><a href="./index.php">Index</a></h3>
 
     <?php
     // echo $row['content'];
