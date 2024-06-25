@@ -72,13 +72,6 @@ class DB
         return $row;
     }
 
-    public function getUser($username)
-    {
-        $stmt = $this->pdo->prepare("SELECT * FROM {$this->table} WHERE acc = :username");
-        $stmt->bindParam(':username', $username);
-        $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_ASSOC);
-    }
 
 }
 
